@@ -5,6 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 import br.com.caelum.financas.modelo.Conta;
+import br.com.caelum.financas.util.JPAUtil;
 
 public class TesteInsereConta {
 	
@@ -12,14 +13,14 @@ public class TesteInsereConta {
 		//Calculando tempo de execucao:
 		long inicio = System.currentTimeMillis();
 		
-		EntityManagerFactory factory = Persistence.createEntityManagerFactory("controlefinancas");
-		EntityManager manager = factory.createEntityManager();
+		
+		EntityManager manager = new JPAUtil().getEntityManager();
 		
 		Conta conta = new Conta();
-		conta.setTitular("Rodrigo Franco");
-		conta.setBanco("Banco Itau");
-		conta.setNumero("147852-2");
-		conta.setAgencia("05656");
+		conta.setTitular("Carlos Franco");
+		conta.setBanco("Banco Brasil");
+		conta.setNumero("159357-5");
+		conta.setAgencia("02589");
 		
 		manager.getTransaction().begin();
 		manager.persist(conta);
