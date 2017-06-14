@@ -16,9 +16,8 @@ public class TesteInsereMovimentacao {
 		Movimentacao m = new Movimentacao();
 		EntityManager manager = new JPAUtil().getEntityManager();
 		
-		m.setDescricao("Conta de Luz");
-		m.setData(Calendar.getInstance());
-		m.setValor(new BigDecimal("54"));
+		m.setDescricao("Conta de PSN");
+		m.setValor(new BigDecimal("100"));
 		m.setTipoMovimentacao(TipoMovimentacao.SAIDA);
 		
 		manager.getTransaction().begin();
