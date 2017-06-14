@@ -9,6 +9,7 @@
 		
 		<!-- Entidades (classes) mapeadas pelo Hibernate -->
 		<class>br.com.caelum.financas.modelo.Conta</class>
+		<class>br.com.caelum.financas.modelo.Movimentacao</class>
 	
 		<properties>
 			
