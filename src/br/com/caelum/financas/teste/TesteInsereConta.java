@@ -30,6 +30,6 @@ public class TesteInsereConta {
 		manager.close();
 		
 		long fim = System.currentTimeMillis();
-		System.out.println("Conta Gravada com sucesso! Tempo de execucao = " + (fim-inicio) + "ms");
+		System.out.println("Conta Gravada com sucesso! Tempo de execucao = " + (fim-inicio) + "ms.");
 	}
 }
